@@ -12,7 +12,7 @@ label {
 		stage ('CLEAN_OLD_M2') {
 			
 			steps {
-				sh "rm -rf /home/saccount/.m2/repository"
+				sh "rm -rf /home/nisha/.m2/repository"
 				
 			}
 			
@@ -33,7 +33,7 @@ label {
 		
 				steps {
 						
-						sh "scp -r target/LoginWebApp.war saccount@10.0.2.51:/data/project/wars"
+						sh "scp -r target/LoginWebApp.war nisha@172.31.3.3:/data/project/wars"
 
 						}
 				
