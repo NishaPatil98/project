@@ -2,7 +2,7 @@ pipeline {
 agent {
 label {
 		label "built-in"
-		customWorkspace "/data/project-myapp"
+		customWorkspace "/mnt/project-myapp"
 		
 		}
 		}
@@ -33,7 +33,7 @@ label {
 		
 				steps {
 						
-						sh "scp -r target/LoginWebApp.war nisha@172.31.36.195:/data/project/wars"
+						sh "scp -r target/LoginWebApp.war nisha@172.31.36.195:/mnt/proj/war"
 
 						}
 				
